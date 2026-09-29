@@ -1,0 +1,46 @@
+RESPOSTAS DAS QUESTÕES DE FIXAÇÃO
+
+1. O que é versionamento de código e qual a sua principal vantagem?
+Resposta: Versionamento de código é o processo de registrar, rastrear e gerenciar alterações feitas em arquivos ao longo do tempo. Sua principal vantagem é manter um histórico completo das modificações, permitindo recuperar versões anteriores e trabalhar em equipe sem o risco de sobrescrever trabalhos.
+
+2. Qual é a função do comando git status dentro de um repositório?
+Resposta: O comando git status exibe o estado atual dos arquivos dentro do repositório local, mostrando quais estão modificados, não rastreados (untracked) ou preparados para o commit (staging area).
+
+3. Qual comando deve ser utilizado para transformar uma pasta comum do sistema em um repositório Git?
+Resposta: O comando git init.
+
+4. O que significa um arquivo estar na condição Untracked (não rastreado)?
+Resposta: Significa que o arquivo existe no diretório do projeto, mas ainda não foi adicionado ao Git e não está sendo monitorado para versionamento.
+
+5. Para que serve o comando git add . e qual a diferença em relação a git add <nome_do_arquivo>?
+Resposta: O comando git add . adiciona todas as alterações e arquivos novos da pasta atual para a área de preparação (staging area). Já o git add <nome_do_arquivo> adiciona apenas o arquivo específico especificado.
+
+6. Explique a finalidade da flag -m no comando git commit -m "mensagem".
+Resposta: A opção/flag -m (message) serve para descrever de forma explicativa e direta o que foi alterado ou adicionado naquele commit sem precisar abrir um editor de texto no terminal.
+
+7. O que acontece se executarmos git commit sem informar a mensagem de confirmação?
+Resposta: O Git abrirá o editor de texto padrão configurado no terminal (como o Vim ou Nano) para que o usuário escreva obrigatoriamente uma mensagem de commit.
+
+8. Qual comando é utilizado para visualizar o histórico de commits já realizados no repositório?
+Resposta: O comando git log.
+
+9. Para que serve o comando git remote add origin <URL>?
+Resposta: Serve para vincular o repositório Git local ao repositório remoto criado no GitHub (ou outro serviço em nuvem) sob o apelido/atalho de origin.
+
+10. Qual a diferença entre um repositório local e um repositório remoto no GitHub?
+Resposta: O repositório local fica salvo na sua própria máquina (computador). O repositório remoto fica hospedado na nuvem (no servidor do GitHub) e pode ser acessado de qualquer lugar ou compartilhado com outras pessoas.
+
+11. Qual comando é utilizado para enviar as atualizações locais para o GitHub?
+Resposta: O comando git push origin master (ou git push origin main, dependendo do nome da branch).
+
+12. Por que é recomendável utilizar arquivos .txt ou .md em vez de arquivos .docx ao versionar com o Git?
+Resposta: O Git trabalha melhor rastreando arquivos de texto puro (.txt, .md, .js, etc.), pois consegue identificar diferenças linha por linha (diff). Arquivos do Word (.docx) são arquivos binários compactados, o que impede o Git de exibir e comparar as alterações exatas de texto no histórico.
+
+13. O que representa a pasta oculta .git criada na raiz do projeto?
+Resposta: Representa a estrutura de dados interna e o banco de dados do Git, contendo todo o histórico de commits, configurações, ponteiros de branches e metadados do repositório local.
+
+14. Se você modificar um arquivo que já passou por um commit, qual será o status dele exibido pelo Git?
+Resposta: O status exibido será modified (modificado).
+
+15. O que deve ser feito antes de executar o comando git push pela primeira vez em um projeto novo?
+Resposta: Deve-se criar o repositório remoto no GitHub, vincular o repositório local ao remoto executando o comando git remote add origin <URL> e garantir que os arquivos foram preparados (git add) e comitados (git commit).
